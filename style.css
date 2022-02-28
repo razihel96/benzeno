@@ -12,13 +12,33 @@ body {
 /*BANNER*/
 
 .header {
-  padding: 30px;
+  padding: 20px;
   width: 100%;
-  height: 200px;
-  background: linear-gradient(0deg, rgba(77,118,95,0.2679446778711485) 35%, rgba(45,45,43,1) 100%);
-  position: static;
-  z-index: 5;
+  height: 80px;
+  background: #4d765f;
+  position: fixed;
   display: flex;
+}
+
+.pulsanti{
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  display: inline-block;
+
+
+}
+
+button {
+  color: #2d2d2b;
+  background-color: white;
+  border-radius: 40px;
+  font-size: 15px;
+  font-weight: 200;
+  border: 4px solid #2d2d2b;
+  width: 100px;
+  height: 100%;
 }
 
 .social {
@@ -45,56 +65,33 @@ h2 {
   padding-left: 5px;
 }
 
+
+/*HERO*/
+.hero {
+  border: 1px solid red;
+  width: 100%;
+  height: 600px;
+  padding: 20px;
+  padding-top: 100px;
+  display: flex;
+
+}
+
 .logo {
-width: 170px;
-height: 140px;
-border-radius: 100%;
-border: 4px solid white;
+width: 600px;
+height: 100%;
 }
 
 h1 {
+  border: 1px solid red;
   color: white;
-  font-size: 30px;
-  text-align: left;
+  font-size: 70px;
+  font-weight: 700;
+  text-align: right;
   width: 100%;
   padding: 30px;
-  padding-top: 40px;
+  padding-right: 40px;
+  padding-top: 110px;
 }
-
-
-
-/*HERO*/
-#videobackground {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: 0;
-  opacity: 0.8;
-  background-color: rgb(77,118,95);
-
-
-}
-
-.hero{
-  position: relative;
-  height: 600px;
-  overflow: hidden; /*serve per ridimensionare il video all'interno del contenitore*/
-
-}
-
 
 /*CATEGORIE*/
-.pulsanti{
-  border: 1px solid red;
-  display: flex;
-  display: inline-block;
-  justify-content: center;
-}
-
-button {
-  border-radius: 40px;
-  font-size: 40px;
-  border: 1px solid red;
-  width: 200px;
-  height: 200px;
-}
