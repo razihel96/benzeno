@@ -112,11 +112,12 @@ h2 {
 
 }
 
+
 .bottone {
   color: #2d2d2b;
   background-color: #4d765f;
   border-radius: 40px;
-  font-size: 30px;
+  font-size: 2vmax;
   font-weight: 200;
   border: 8px solid #4d765f;
   max-width: 180px;
