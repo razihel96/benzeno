@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: #2d2d2b;
 }
@@ -14,7 +18,6 @@ body {
 .header {
   /*border: 1px solid red;*/
 
-  padding: 20px;
   width: 100%;
   height: 80px;
   background: #4d765f;
@@ -25,24 +28,18 @@ body {
 .social {
   background: transparent;
   border: rgb(77,118,95);
-  width: 45px;
-  height: 42px;
+  padding-right: 8px;
 }
 
 .header img {
-  padding: 6px;
-  width: 50px;
-  height: 100%;
-  background-size: contain;
-  background-position: center;
+  width: 35px;
+  height: 35px;
 }
 
 h2 {
-  color: white;
+  color: black;
   font-size: 15px;
-  padding-top: 15px;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding: 33px 10px 0 10px;
 }
 
 
@@ -58,15 +55,15 @@ h2 {
 }
 
 .logo {
-  max-width: 400px;
-  max-height: 300px;
+  max-width: 700px;
+  max-height: 600px;
   width: 100%;
   height: 100%;
   margin: auto;
 }
 
 .scritta {
-  /*border: 1px solid red;*/
+  border: 1px solid red;
 
   margin: auto;
   color: white;
@@ -79,104 +76,129 @@ h2 {
 
 }
 
+
+
+
+
+
+
+
 /*BUTTON*/
 .pulsanti{
   /*border: 1px solid yellow;*/
 
-  min-height: 50px;
-  width: 50%;
+  min-height: 10px;
+  width: 80%;
   margin: auto;
-  height: 100%;
+  height: 30vh;
   display: flex;
-  justify-content: center;
   justify-content: space-between;
+  padding-top: 100px;
+
 }
 
 .pulsanti button {
   color: #2d2d2b;
-  background-color: white;
+  background-color: #4d765f;
   border-radius: 40px;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 200;
-  border: 3px solid #4d765f;
-  width: 22%;
-  height: 35px;
-
+  border: 8px solid #4d765f;
+  max-width: 180px;
+  width: 20%;
+  max-height: 100px;
+  height: 50%;
 }
 
 
+
+
+
+
+
 /*POST*/
+
 .corpo {
-  /*border: 1px solid green;*/
+  border: 1px solid green;
 
   background-color: #2d2d2b;
   padding-top: 40px;
-  height: 200vh;
+  padding-bottom: 40px;
   width: 50%;
   margin: auto;
 }
 
 .sezione {
-  border: 3px solid #4d765f;
-  display: flex;
-  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  padding-top: 20px;
 }
 
-.testo h1 {
-  /*border: 1px solid red;*/
+.banner {
+  border: 1px solid red;
 
-  padding-left: 20px;
-  color: #F94008;
+  width: 100%;
+  display: flex;
+}
+
+.pic {
+  border: 1px solid red;
+}
+
+.pic img {
+  width: 60px;
+  height: 60px;
+}
+
+.name {
+  border: 1px solid red;
+  width: 100%;
+  padding: 23px 0 0 10px;
+  font-size: 20px;
+
+}
+.dot {
+  border: 1px solid blue;
+  margin: auto;
+}
+
+
+.instagram {
+  border: 1px solid blue;
+}
+
+.instagram img {
+  border: 1px solid red;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+
+.testo h1 {
+  border: 1px solid red;
+
+  color: black;
+  padding-top: 5px;
   padding-bottom: 5px;
   text-transform: uppercase;
   font-size: 25px;
-  text-align: right;
+  text-align: left;
 }
 
 .testo p {
-  /*border: 1px solid red;*/
+  border: 1px solid red;
 
   text-align: justify;
-  color: white;
-  padding-left: 30px;
+  color: black;
 }
 
 
 .sezione .foto {
-  /*border: 1px solid yellow;*/
+  border: 1px solid yellow;
 
-  border-right: 20px solid #F94008;
-  max-width: 50%;
-  min-width: 200px;
+  width: 100%;
   height: 100%;
-}
-
-
-.testo2 h1 {
-  /*border: 1px solid red;*/
-
-  color: #F94008;
-
-  text-transform: uppercase;
-  padding-bottom: 5px;
-  font-size: 25px;
-  text-align: left;
-  padding-right: 20px;
-}
-
-.testo2 p {
-  /*border: 1px solid red;*/
-
-  color: white;
-  text-align: justify;
-  padding-right: 30px;
-}
-
-.sezione .foto2 {
-  /*border: 1px solid yellow;*/
-
-  border-left: 20px solid #F94008;
-  max-width: 50%;
-  min-width: 200px;
-  height: 100%;
+  padding: 5px 0 5px 0;
 }
