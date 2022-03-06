@@ -1,3 +1,6 @@
+
+//GENERATORE DI LINK CASUALI//
+
 var random_posts_chimica = new Array()
 
 random_posts_chimica[0] = "index2.html"

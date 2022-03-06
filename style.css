@@ -6,6 +6,7 @@
 
 a {
   text-decoration: none;
+  color: #2d2d2b;
 }
 
 body {
@@ -39,7 +40,14 @@ body {
 h2 {
   color: black;
   font-size: 15px;
-  padding: 33px 10px 0 10px;
+  padding: 33px 10px 0 15px;
+}
+
+.header #cta {
+  color: black;
+  font-size: 15px;
+  margin-left: auto;
+  padding: 33px 15px 0 15px;
 }
 
 
@@ -76,8 +84,15 @@ h2 {
 
 }
 
-
-
+/*FOOTER*/
+.footer {
+}
+.container {
+  display: flex;
+  justify-content: center;
+  color: #4d765f;
+  font-size: 15px;
+}
 
 
 
@@ -97,7 +112,7 @@ h2 {
 
 }
 
-.pulsanti button {
+.bottone {
   color: #2d2d2b;
   background-color: #4d765f;
   border-radius: 40px;
@@ -172,9 +187,28 @@ h2 {
   border: 1px solid red;
   width: 40px;
   height: 40px;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
+.instagram__list { /*ho creato una "sottoclasse" per posizionare a destra il bookmark*/
+  display: flex;
+}
+
+.instagram__list #bookmark {
+  margin-left: auto;
+  margin-right: 0;
+  width: 43px;
+  height: 43px;
+}
+
+.instagram__list #balloon { /*specchio l'item*/
+  transform: rotateY(180deg);
+}
+
+.instagram__list #send {
+  width: 43px;
+  height: 43px;
+}
 
 .testo h1 {
   border: 1px solid red;
@@ -201,4 +235,42 @@ h2 {
   width: 100%;
   height: 100%;
   padding: 5px 0 5px 0;
+}
+
+
+
+
+
+
+
+
+/*FORM*/
+.form {
+  border: 1px solid red;
+
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+  padding-top: 100px;
+
+}
+
+.form__list {
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label {
+  color: white;
+  margin-right: auto;
+}
+
+.input-type {
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: auto;
 }
