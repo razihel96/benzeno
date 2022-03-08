@@ -73,31 +73,15 @@ h2 {
   margin: auto;
 }
 
-.scritta {
-  border: 1px solid red;
-
-  margin: auto;
-  color: white;
-  font-size: 25px;
-  text-align: right;
-  width: 80%;
-  height: 100%;
-  padding: 0 30px 0 30px;
-  text-transform: uppercase;
-
-}
-
 /*FOOTER*/
 .footer {
 }
-.container {
+.contenitore {
   display: flex;
   justify-content: center;
   color: #4d765f;
   font-size: 15px;
 }
-
-
 
 
 
@@ -116,8 +100,6 @@ h2 {
 
 
 .bottone {
-
-  color: #2d2d2b;
   background-color: #4d765f;
   border-radius: 100%;
   font-size: 5vmax;
@@ -125,22 +107,46 @@ h2 {
   min-width: 160px;
   max-width: 200px;
   min-height: 160px;
+  box-shadow: 10px 10px 8px #1d1d1c;
 }
 
+.bottone:hover::after {
+  font-size: 10px;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Sans', sans-serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
 
 #chimica:hover {
   background: radial-gradient(circle, rgba(153,231,211,1) 0%, rgba(56,140,236,1) 81%);
-
 }
+#chimica:hover::after {
+  content: "Chimica";
+}
+
 #bio:hover {
   background: radial-gradient(circle, rgba(231,153,214,1) 0%, rgba(148,168,233,1) 80%);
-
 }
+#bio:hover::after {
+  content: "Biologia";
+}
+
 #curio:hover {
   background: radial-gradient(circle, rgba(254,255,178,1) 0%, rgba(255,210,121,1) 81%);
 }
+#curio:hover::after {
+  content: "Curiosità";
+}
+
 #quiz:hover {
   background: radial-gradient(circle, rgba(241,148,106,1) 0%, rgba(232,107,136,1) 81%);
+}
+#quiz:hover::after {
+  content: "Quiz";
 }
 
 
@@ -304,4 +310,84 @@ h2 {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-right: auto;
+}
+
+
+
+
+/*QUIZ*/
+.container {
+  max-width: 500px;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.punteggio {
+  /*border: 1px solid blue;*/
+
+  background-color: #1d1d1c;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+
+
+}
+
+#score {
+  /*border: 1px solid red;*/
+  width: 100%;
+}
+
+#coutdown {
+  /*border: 1px solid red;*/
+}
+
+.question {
+  /*border: 1px solid red;*/
+
+  background-color: #4d765f;
+  color: white;
+  font-size: 25px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.answers {
+  /*border: 1px solid red;*/
+
+  height: 180px;
+  background-color: #4d765f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+
+}
+
+.row span {
+  margin-left: 8px;
+}
+
+.send {
+  /*border: 1px solid red;*/
+
+  background-color: #1d1d1c;
+  color: white;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 23px;
+  border-radius: 0 0 20px 20px;
+
 }
