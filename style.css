@@ -348,6 +348,11 @@ h2 {
   /*border: 1px solid red;*/
 }
 
+.question_number {
+  background-color: #4d765f;
+  color: white;
+}
+
 .question {
   /*border: 1px solid red;*/
 
