@@ -8,7 +8,7 @@ const quiz = [
     answer: 1
   },
   {
-    q: 'Di che color era il cavallo bianco di Napoleone?',
+    q: 'Di che colore era il cavallo bianco di Napoleone?',
     option: ['Nero', 'Giallo', 'Rosso', 'Verde'],
     answer: 0
   },
@@ -16,7 +16,7 @@ const quiz = [
     q: 'Che ore sono?',
     option: ['Sì', 'No', 'Boh', 'Londra'],
     answer: 3
-  },
+  }
 
 
 
