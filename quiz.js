@@ -16,6 +16,11 @@ const quiz = [
     q: 'Che ore sono?',
     option: ['Sì', 'No', 'Boh', 'Londra'],
     answer: 3
+  },
+  {
+    q: '6 + 10 = ?',
+    option: ['Sì', 'No', '60', '16'],
+    answer: 2
   }
 
 

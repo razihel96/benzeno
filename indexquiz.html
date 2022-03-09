@@ -13,35 +13,53 @@
 
 
 <body>
-  <div class="container">
 
-    <div class="punteggio">
-      <span>Score: <span id="score">0</span></span>
-      <span id="coutdown">0</span>
-    </div>
-    <div class="question_number">  <!--ha tolto questo-->
-      Question 1 of 5
-    </div>
 
-    <div class="question"> <!--ha tolto questo-->
-      <p>Quanto è bello popone?</p>
-    </div>
+    <div class="container">
 
-    <div class="answers"> <!--ha tolto questo-->
-
-    </div>
-
-      <div class="send">
-        <button onclick="invia()">Send!</button>
+      <div class="punteggio">
+        <span>Score: <span id="score">0</span></span>
+        <span id="countdown">10</span>
       </div>
-    </div>
+      <div class="question_number">  <!--ha tolto questo-->
+
+      </div>
+
+      <div class="question"> <!--ha tolto questo-->
+
+      </div>
+
+      <div class="answers"> <!--ha tolto questo-->
+
+      </div>
+
+        <div class="send">
+          <button class="next" onclick="invia()">Send!</button>
+        </div>
+      </div>
 
 
 
+<div class="result-box">
+  <h1> Quiz result</h1>
+  <table>
+    <tr>
+      <td>Correct</td>
+      <td><span class="total-correct">0</span></td>
+    </tr>
+    <tr>
+      <td>Wrong</td>
+      <td><span class="total-wrong">1</span></td>
+    </tr>
+    <tr>
+      <td>Your Total Score</td>
+      <td><span class="total-score">2</span></td>
+    </tr>
+  </table>
+  <button type="button" class="btn">Try Again</button>
+  <button type="button" class="btn">Go Home</button>
 
-
-
-
+</div>
 
 
 
