@@ -324,6 +324,10 @@ h2 {
   margin-top: 200px;
 }
 
+.container.hide {
+  display: none;
+}
+
 
 .punteggio {
   /*border: 1px solid blue;*/
@@ -421,8 +425,8 @@ h2 {
   overflow: hidden;
 }
 
-.row.hide {
-  display: none;
+.container .answers.escludi {
+  pointer-events: none;
 }
 
 .container .answers .row.escludi {
@@ -479,12 +483,17 @@ h2 {
   width: 50%;
   height: 100%;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 200px;
   text-align: center;
   padding: 20px;
   border-radius: 20px;
 
 }
+
+.result-box.hide{
+  display: none;
+}
+
 
 .result-box h1 {
 }
@@ -497,7 +506,9 @@ h2 {
 
 .result-box table td {
   border: 1px solid black;
+  font-size: 15px;
   width: 20px;
+  padding: 5px;
 }
 
 .result-box .btn {

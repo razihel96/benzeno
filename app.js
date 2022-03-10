@@ -4,6 +4,9 @@ const numero_domanda = document.querySelector(".question_number");
 const domanda = document.querySelector(".question");
 const risposta = document.querySelector(".answers");
 const send = document.querySelector(".next");
+const home_box = document.querySelector(".animated.bounceInUp")
+const quiz_box = document.querySelector(".container")
+const result_box = document.querySelector(".result-box")
 
 var score = document.getElementById('score');
 var countdown = document.getElementById('countdown');
@@ -85,7 +88,8 @@ function get_nuova_domanda() {
 }
 
 function quiz_over() {
-  console.log("fine");
+  quiz_box.classList.add("hide");
+  result_box.classList.remove("hide");
 }
 
 
@@ -125,6 +129,7 @@ function unclickable_risposte() {
   const risposte_rimaste = risposta.children.length;
   for(let i=0; i<risposte_rimaste; i++) {
     risposta.children[i].classList.add("escludi");
+    risposta.children[i].onclick = null;
   }
 }
 
@@ -136,6 +141,7 @@ function invia() {
 
   if (domanda_contatore === quiz.length) {
       console.log("FINE");
+      quiz_over();
   }
   else {
     get_nuova_domanda();
