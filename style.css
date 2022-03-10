@@ -73,15 +73,23 @@ h2 {
   margin: auto;
 }
 
+
+
+
+
 /*FOOTER*/
 .footer {
 }
+
+
 .contenitore {
   display: flex;
   justify-content: center;
   color: #4d765f;
   font-size: 15px;
 }
+
+
 
 
 
@@ -425,9 +433,6 @@ h2 {
   overflow: hidden;
 }
 
-.container .answers.escludi {
-  pointer-events: none;
-}
 
 .container .answers .row.escludi {
   pointer-events: none;
@@ -442,7 +447,7 @@ h2 {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: green;
+  background-color: #b6e2ba;
   z-index: -1;
 }
 
@@ -453,7 +458,7 @@ h2 {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: red;
+  background-color: #ff9a9a;
   z-index: -1;
 }
 
@@ -483,7 +488,7 @@ h2 {
   width: 50%;
   height: 100%;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 260px;
   text-align: center;
   padding: 20px;
   border-radius: 20px;
