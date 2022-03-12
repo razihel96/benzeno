@@ -15,6 +15,41 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.swipe {
+  /*border: 1px solid yellow;*/
+
+  display: flex;
+
+}
+
+.freccia1 {
+  /*border: 1px solid red;*/
+
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.freccia2 {
+  /*border: 1px solid red;*/
+
+  background-color: #2d2d2b;
+  border: none;
+  color: black;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+
+}
+
+.destra {
+  color: black;
+  font-weight: 100;
+}
+
 
 
 /*BANNER*/
@@ -183,6 +218,8 @@ h2 {
 }
 
 .sezione {
+  /*border: 1px solid red;*/
+
   background-color: white;
   border-radius: 20px;
   padding: 20px;
