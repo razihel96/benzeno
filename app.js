@@ -39,10 +39,11 @@ function set_domanda_disponibile() {
 
 function get_nuova_domanda() {
   numero_domanda.innerHTML = "Domanda " + (domanda_contatore + 1) + " di 3";
+
   const indice_domanda = domande_disponibili[Math.floor(Math.random() * domande_disponibili.length)];
   domanda_corrente = indice_domanda;
   domanda.innerHTML = domanda_corrente.q;
-
+  //elimina domanda già visualizzata
   const index1 = domande_disponibili.indexOf(indice_domanda);
   domande_disponibili.splice(index1, 1);
 
