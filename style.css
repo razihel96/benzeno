@@ -323,6 +323,10 @@ h2 {
   line-height: 20px;
 }
 
+.link {
+  color: blue;
+}
+
 
 .sezione .foto {
   /*border: 1px solid yellow;*/
@@ -603,7 +607,24 @@ h2 {
 
 }
 
+.next {
+  width: 130px;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: #2d2d2b;
+  color: white;
+  font-size: 12px;
+}
 
+.next:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+
+.next a {
+  color: white;
+}
 
 
 
@@ -655,4 +676,8 @@ h2 {
 
 .btn a {
   color: white;
+}
+
+.btn:hover {
+  background-color: orange;
 }

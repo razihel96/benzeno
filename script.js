@@ -21,8 +21,21 @@ var random_posts_biologia = new Array()
 
 random_posts_biologia[0] = "index_blob.html"
 random_posts_biologia[1] = "index_seahorse.html"
-//random_posts_biologia[2] = "index4.html"
-//random_posts_biologia[3] = "index5.html"
+random_posts_biologia[2] = "index_tree.html"
+random_posts_biologia[3] = "index_lizard.html"
+random_posts_biologia[4] = "index_brain.html"
+random_posts_biologia[5] = "index_dna.html"
+random_posts_biologia[6] = "index_locust.html"
+random_posts_biologia[7] = "index_wasp.html"
+//random_posts_biologia[8] = "index_lizard.html"
+//random_posts_biologia[9] = "index_lizard.html"
+//random_posts_biologia[10] = "index_lizard.html"
+//random_posts_biologia[11] = "index_lizard.html"
+//random_posts_biologia[12] = "index_lizard.html"
+//random_posts_biologia[13] = "index_lizard.html"
+//random_posts_biologia[14] = "index_lizard.html"
+//random_posts_biologia[15] = "index_lizard.html"
+
 
 function random_post_biologia() {
   window.location=random_posts_biologia[Math.floor(Math.random()*random_posts_biologia.length)]
