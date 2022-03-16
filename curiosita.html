@@ -10,10 +10,34 @@
   <link rel="stylesheet" href="style.css">
   <!--ANIMATE.CSS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+
+  <!--LOADING-->
+  <script>
+  (function(){
+    if (window.addEventListener)
+    {
+      window.addEventListener("load", nascondi_loading_screen, false);
+    }else{
+      window.attachEvent("onload", nascondi_loading_screen);
+    }
+  })();
+  function nascondi_loading_screen()
+  {
+    document.getElementById("loading_screen").style.display = 'none';
+  }
+  </script>
+
+
 </head>
 <script> </script>
 
 <body class="homepost">
+  <div id="loading_screen">
+  <h1>Loading...</h1>
+  <p>La pagina è in caricamento<br/>
+  Resta connesso e non cambiare sito!</p>
+</div>
 <div class="tornanellahome"><a href="index.html"><img src="home.png" alt=""></a></div>
 
 
