@@ -1,19 +1,59 @@
 
 //GENERATORE DI LINK CASUALI//
+let random_indice_post;
+let post_selezionato;
+let post_eliminato;
 
 
-var random_posts_chimica = new Array()
 
-random_posts_chimica[0] = "index_flour.html"
-random_posts_chimica[1] = "index_airbag.html"
-random_posts_chimica[2] = "index_molecule.html"
-random_posts_chimica[3] = "index_soap.html"
-random_posts_chimica[4] = "index_pepper.html"
+
+
+const posts = document.querySelectorAll(".hide")
+const selex = document.querySelector(".selected")
+
+
+
+//var random_posts_chimica = new Array()
+
+//random_posts_chimica[0] = "index_flour.html"
+//random_posts_chimica[1] = "index_airbag.html"
+//random_posts_chimica[2] = "index_molecule.html"
+//random_posts_chimica[3] = "index_soap.html"
+//random_posts_chimica[4] = "index_pepper.html"
 
 function random_post_chimica() {
-    window.location = random_posts_chimica[Math.floor(Math.random()*random_posts_chimica.length)]
+    random_indice_post = [Math.floor(Math.random()*posts.length)]
+    console.log(random_indice_post)
+
+    post_selezionato = posts[random_indice_post]
+
+console.log(post_selezionato)
+
+    for (let i = 0; i<posts.length; i++) {
+      posts[i].classList.add("hide")
+
+      console.log(posts[i])
+    }
+
+
+    if(post_selezionato.classList.contains("selected")) {
+      post_selezionato.remove()
+      console.log(posts)
+
   }
 
+
+    post_selezionato.classList.remove("hide");
+    post_selezionato.classList.add("selected");
+
+
+
+
+
+
+
+    console.log(posts) //i post rimasti
+}
 
 
 

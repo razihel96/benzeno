@@ -1,4 +1,8 @@
-
+//const airbag = document.getElementById(1)
+//const flour = document.getElementById(0)
+//const molecule = document.getElementById(2)
+//const soap = document.getElementById(3)
+//const pepper = document.getElementById(4)
 
 const numero_domanda = document.querySelector(".question_number");
 const domanda = document.querySelector(".question");
