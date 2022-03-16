@@ -2,97 +2,40 @@
 //GENERATORE DI LINK CASUALI//
 let random_indice_post;
 let post_selezionato;
-let post_eliminato;
+let post_non_visualizzati;
+var post_precedente = null;
+
+var button = document.querySelector(".arrow")
+random_post();
 
 
 
 
 
-const posts = document.querySelectorAll(".hide")
-const selex = document.querySelector(".selected")
+function random_post() {
+//non mostrare il post già visualizzato
+  if (post_precedente !== null) {
+    post_precedente.classList.remove('active');
+  }
+  //raggruppo tutti i post non ancora visualizzati quindi senza il selected
+  post_non_visualizzati = document.querySelectorAll(".corpo:not(.selected)");
 
+  console.log(post_non_visualizzati)
+//se esiste un post non visualizzato, lo estraggo tra quelli non selezionati
+if (post_non_visualizzati.length > 0) {
+  random_indice_post = [Math.floor(Math.random()*post_non_visualizzati.length)]
+  post_selezionato = post_non_visualizzati[random_indice_post];
 
+  //mostro il post post_selezionato
+  post_selezionato.classList.add('active');
+  post_selezionato.classList.add('selected');
+  //aggiorno il post precedente
+  post_precedente = post_selezionato
 
-//var random_posts_chimica = new Array()
-
-//random_posts_chimica[0] = "index_flour.html"
-//random_posts_chimica[1] = "index_airbag.html"
-//random_posts_chimica[2] = "index_molecule.html"
-//random_posts_chimica[3] = "index_soap.html"
-//random_posts_chimica[4] = "index_pepper.html"
-
-function random_post_chimica() {
-    random_indice_post = [Math.floor(Math.random()*posts.length)]
-    console.log(random_indice_post)
-
-    post_selezionato = posts[random_indice_post]
-
-console.log(post_selezionato)
-
-    for (let i = 0; i<posts.length; i++) {
-      posts[i].classList.add("hide")
-
-      console.log(posts[i])
-    }
-
-
-    if(post_selezionato.classList.contains("selected")) {
-      post_selezionato.remove()
-      console.log(posts)
-
+} else
+  //altrimenti nascondo il button
+  {
+    button.style.display = 'none';
   }
 
-
-    post_selezionato.classList.remove("hide");
-    post_selezionato.classList.add("selected");
-
-
-
-
-
-
-
-    console.log(posts) //i post rimasti
 }
-
-
-
-var random_posts_biologia = new Array()
-
-random_posts_biologia[0] = "index_blob.html"
-random_posts_biologia[1] = "index_seahorse.html"
-random_posts_biologia[2] = "index_tree.html"
-random_posts_biologia[3] = "index_lizard.html"
-random_posts_biologia[4] = "index_brain.html"
-random_posts_biologia[5] = "index_dna.html"
-random_posts_biologia[6] = "index_locust.html"
-random_posts_biologia[7] = "index_wasp.html"
-//random_posts_biologia[8] = "index_lizard.html"
-//random_posts_biologia[9] = "index_lizard.html"
-//random_posts_biologia[10] = "index_lizard.html"
-//random_posts_biologia[11] = "index_lizard.html"
-//random_posts_biologia[12] = "index_lizard.html"
-//random_posts_biologia[13] = "index_lizard.html"
-//random_posts_biologia[14] = "index_lizard.html"
-//random_posts_biologia[15] = "index_lizard.html"
-
-
-function random_post_biologia() {
-  window.location=random_posts_biologia[Math.floor(Math.random()*random_posts_biologia.length)]
-}
-
-
-var random_posts_curiosita = new Array()
-
-random_posts_curiosita[0] = "index_dog.html"
-random_posts_curiosita[1] = "index_coral.html"
-random_posts_curiosita[2] = "index_organs.html"
-random_posts_curiosita[3] = "index_nanism.html"
-random_posts_curiosita[4] = "index_ectro.html"
-random_posts_curiosita[5] = "index_tattoo.html"
-random_posts_curiosita[6] = "index_giuliocesare.html"
-random_posts_curiosita[7] = "index_tantra.html"
-
-function random_post_curiosita() {
-    window.location=random_posts_curiosita[Math.floor(Math.random()*random_posts_curiosita.length)]
-  }

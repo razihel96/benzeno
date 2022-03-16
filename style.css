@@ -15,10 +15,9 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-.contenitore {
-  background-color: black;
+.homepost {
+  display: flex;
 }
-
 
 
 .swipe {
@@ -28,8 +27,8 @@ body {
 
 }
 
-.freccia1 {
-  /*border: 1px solid red;*/
+.tornanellahome {
+  border: 1px solid red;
 
   font-size: 80px;
   display: flex;
@@ -38,26 +37,27 @@ body {
   width: 30%;
 }
 
-.freccia1 img {
+.tornanellahome img {
   width: 55px;
   height: 55px;
 }
 
-.freccia2 {
-  /*border: 1px solid red;*/
+.arrow {
+  border: 1px solid red;
 
   background-color: #2d2d2b;
   color: black;
-  border: none;
+  /*border: none;*/
   font-size: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 30%;
+  cursor: pointer;
 
 }
 
-.freccia2 img {
+.arrow img {
   width: 80px;
   height: 80px;
 }
@@ -238,10 +238,9 @@ h2 {
   padding-bottom: 20px;
   width: 40%;
   margin: auto;
-}
-.corpo.hide {
   display: none;
 }
+
 
 .sezione {
   /*border: 1px solid red;*/
@@ -253,6 +252,10 @@ h2 {
   padding: 20px;
   padding-top: 20px;
   box-shadow: 40px 40px 40px black;
+
+}
+.active {
+  display: block;
 }
 
 .banner {
