@@ -29,7 +29,7 @@
   }
   </script>
 
-
+<script src="jquery-3.6.0.min.js"></script>
 </head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,8 +47,8 @@
 
   <div class="header">
     <h2> Seguici!</h2>
-    <button class="social"> <a href="https://t.me/joinchat/AAAAAFLmNljf7xyqxVyVIw"><img class="t" src="iconT.png" alt=""></a> </button>
-    <button class="social"> <img class="i" src="iconI.png" alt=""> </button>
+    <button class="social"> <a href="https://t.me/joinchat/AAAAAFLmNljf7xyqxVyVIw"><img class="ti" src="iconT.png" alt=""></a> </button>
+    <button class="social"> <img class="ti" src="iconI.png" alt=""> </button>
     <a href="indexform.html" id="cta">Contatti</a>
   </div>
 
@@ -78,6 +78,14 @@
 
 
 <script src="script.js"></script>
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script>
+VanillaTilt.init(document.querySelectorAll(".hero"), {
+    max: 13,
+    speed: 300
+  });
+</script>
 </body>
 
 

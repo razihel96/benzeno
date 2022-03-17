@@ -47,7 +47,7 @@ body {
 }
 
 .tornanellahome {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 
   font-size: 80px;
   display: flex;
@@ -62,11 +62,11 @@ body {
 }
 
 .arrow {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 
   background-color: #2d2d2b;
   color: black;
-  /*border: none;*/
+  border: none;
   font-size: 100px;
   display: flex;
   justify-content: center;
@@ -111,12 +111,7 @@ body {
   border: none;
 }
 
-.t:hover {
-  width: 40px;
-  height: 40px;
-}
-
-.i:hover {
+.ti:hover {
   width: 40px;
   height: 40px;
 }
@@ -214,10 +209,14 @@ h2 {
   max-width: 165px;
   max-height: 165px;
 
-  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
-              -5px -5px 10px rgba(0, 0, 0, 0.5),
-              inset 5px 5px 10px rgba(0, 0, 0, 0.5),
-              2px 2px 8px rgba(255, 255, 255, 0.15);
+  /*box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.05),
+              8px 8px 30px rgba(0, 0, 0, 0.5),
+              inset -8px -8px 15px rgba(0, 0, 0, 0.5),
+              -1px -1px 5px rgba(255, 255, 255, 0.15);*/
+
+ box-shadow:  3px 3px 5px rgba(0, 0, 0, 0.5),
+               inset -2px -2px 5px rgba(0, 0, 0, 0.5),
+             -6px -6px 20px rgba(255, 255, 255, 0.05);
   /*box-shadow: 10px 10px 8px #1d1d1c;*/
 }
 
@@ -235,6 +234,10 @@ h2 {
 
 #chimica:hover {
   background: radial-gradient(circle, rgba(153,231,211,1) 0%, rgba(56,140,236,1) 81%);
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.05),
+              -8px -8px 8px rgba(0, 0, 0, 0.5),
+              inset 3px 3px 10px rgba(0, 0, 0, 0.5),
+              4px 4px 10px rgba(255, 255, 255, 0.15);
 }
 #chimica:hover::after {
   content: "Chimica";
@@ -242,6 +245,10 @@ h2 {
 
 #bio:hover {
   background: radial-gradient(circle, rgba(231,153,214,1) 0%, rgba(148,168,233,1) 81%);
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.05),
+              -8px -8px 8px rgba(0, 0, 0, 0.5),
+              inset 3px 3px 10px rgba(0, 0, 0, 0.5),
+              4px 4px 10px rgba(255, 255, 255, 0.15);
 }
 #bio:hover::after {
   content: "Biologia";
@@ -249,6 +256,10 @@ h2 {
 
 #curio:hover {
   background: radial-gradient(circle, rgba(254,255,178,1) 0%, rgba(255,210,121,1) 81%);
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.05),
+              -8px -8px 8px rgba(0, 0, 0, 0.5),
+              inset 3px 3px 10px rgba(0, 0, 0, 0.5),
+              4px 4px 10px rgba(255, 255, 255, 0.15);
 }
 #curio:hover::after {
   content: "Curiosità";
@@ -256,6 +267,10 @@ h2 {
 
 #quiz:hover {
   background: radial-gradient(circle, rgba(241,148,106,1) 0%, rgba(232,107,136,1) 81%);
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.05),
+              -8px -8px 8px rgba(0, 0, 0, 0.5),
+              inset 3px 3px 10px rgba(0, 0, 0, 0.5),
+              4px 4px 10px rgba(255, 255, 255, 0.15);
 }
 #quiz:hover::after {
   content: "Quiz";

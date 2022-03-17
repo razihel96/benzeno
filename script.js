@@ -11,8 +11,8 @@ random_post();
 
 
 
-
 function random_post() {
+
 //non mostrare il post già visualizzato
   if (post_precedente !== null) {
     post_precedente.classList.remove('active');
