@@ -32,6 +32,7 @@ if (post_non_visualizzati.length > 0) {
   //aggiorno il post precedente
   post_precedente = post_selezionato
 
+
 } else
   //altrimenti nascondo il button
   {
