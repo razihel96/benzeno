@@ -512,7 +512,12 @@ h2 {
   height: 40px;
   width: 200px;
   letter-spacing: 1px;
+  margin: auto;
+  cursor: pointer;
+}
 
+.form__list .button:hover {
+  color: white;
 }
 
 .input-label {
@@ -730,15 +735,10 @@ h2 {
   text-align: center;
   padding: 20px;
   border-radius: 20px;
-
 }
 
 .result-box.hide{
   display: none;
-}
-
-
-.result-box h1 {
 }
 
 .result-box table {
@@ -760,16 +760,24 @@ h2 {
   height: 30px;
   border-radius: 30px;
   border: none;
-  background-color: #2d2d2b;
   font-size: 12px;
 }
 
-.btn a {
+.btn2 {
+  width: 130px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #2d2d2b;
   color: white;
+  font-size: 12px;
+  display: flex;
+  margin: auto;
+  margin-top: 22px;
+  align-items: center;
+  justify-content: center;
 }
-.btn a:hover {
-  color: black;
-}
-.btn:hover {
+
+.btn2:hover {
   background-color: white;
+  color: #2d2d2b;
 }

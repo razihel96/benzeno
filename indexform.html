@@ -22,24 +22,27 @@
   <div class="form">
 
     <div class="scrivici">Scrivici! ✉️</div>
-    <div class="form__list">
-      <label class="input-label" for="">NOME COMPLETO</label>
-      <input class="input-type" type="text" placeholder="Nome Cognome">
-    </div>
+    <form action="https://formsubmit.co/f88109774c14a5cc6e9020f1a08a9fdd" method="POST">
 
-    <div class="form__list">
-      <label class="input-label" for="">E-MAIL</label>
-      <input class="input-type" type="email" placeholder="Mail Address">
-    </div>
+        <div class="form__list">
+          <label class="input-label" for="">NOME</label>
+          <input class="input-type" type="text" name="name" placeholder="Nome" required>
+        </div>
 
-    <div class="form__list">
-      <label class="input-label" for="">MESSAGGIO:</label>
-      <textarea class="input-type" name="name" rows="6" placeholder="Scrivi un messaggio..."></textarea>
-    </div>
+        <div class="form__list">
+          <label class="input-label" for="">E-MAIL</label>
+          <input class="input-type" type="email" name="email" placeholder="Mail Address" required>
+        </div>
 
-    <div class="form__list">
-      <button class="button">Invia</button>
-    </div>
+        <div class="form__list">
+          <label class="input-label" for="">MESSAGGIO:</label>
+          <textarea class="input-type" name="message" rows="6" placeholder="Scrivi un messaggio..." required></textarea>
+        </div>
+
+        <div class="form__list">
+          <button class="button" type="submit">Invia</button>
+        </div>
+    </form>
 
 
   </div>
