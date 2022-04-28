@@ -13,12 +13,11 @@ a {
 body {
   background-color: #2d2d2b;
   font-family: 'Noto Sans', sans-serif;
-  overflow-x: hidden; /*eliminare la scroll bar orizzontale*/
+  overflow-x: hidden; /*eliminare la scrollbar orizzontale*/
 }
 
 
-#loading_screen
-{
+#loading_screen {
   display: block;
   position: absolute;
   left: 0px;
@@ -122,15 +121,16 @@ body {
   border: none;
 }
 
+
 .ti:hover {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
 
 
 .header img {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 
 h2 {
@@ -177,10 +177,6 @@ h2 {
 
 
 /*FOOTER*/
-.footer {
-}
-
-
 .contenitore {
   display: flex;
   justify-content: center;
@@ -216,19 +212,11 @@ h2 {
   border: none;
   width: 20vw;
   height: 20vh;
-
   max-width: 165px;
   max-height: 165px;
-
-  /*box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.05),
-              8px 8px 30px rgba(0, 0, 0, 0.5),
-              inset -8px -8px 15px rgba(0, 0, 0, 0.5),
-              -1px -1px 5px rgba(255, 255, 255, 0.15);*/
-
- box-shadow:  3px 3px 5px rgba(0, 0, 0, 0.5),
+  box-shadow:  3px 3px 5px rgba(0, 0, 0, 0.5),
                inset -2px -2px 5px rgba(0, 0, 0, 0.5),
-             -6px -6px 20px rgba(255, 255, 255, 0.05);
-  /*box-shadow: 10px 10px 8px #1d1d1c;*/
+               -6px -6px 20px rgba(255, 255, 255, 0.05);
 }
 
 
@@ -310,7 +298,6 @@ h2 {
   /*border: 1px solid red;*/
 
   height: 50%;
-
   background-color: white;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -502,7 +489,6 @@ h2 {
   /*border: 1px solid red;*/
 
   background-color: #4d765f;
-
   border-radius: 40px;
   border: none;
   margin-top: 30px;
