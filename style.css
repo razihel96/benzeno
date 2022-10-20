@@ -67,8 +67,6 @@ body {
 }
 
 .arrow {
-  /*border: 1px solid red;*/
-
   background-color: #2d2d2b;
   color: black;
   border: none;
@@ -82,18 +80,13 @@ body {
 }
 
 .arrow img {
-  width: 80px;
-  height: 80px;
+  width: 55px;
+  height: 55px;
 }
 
 .arrow2:hover {
-  width: 95px;
-  height: 95px;
-}
-
-.destra {
-  color: black;
-  font-weight: 100;
+  width: 65px;
+  height: 65px;
 }
 
 .animated.slideInRight {
