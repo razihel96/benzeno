@@ -109,6 +109,8 @@ body {
 }
 
 .social {
+  /*border: 1px solid red;*/
+
   background: transparent;
   margin-right: 10px;
   border: none;
@@ -122,6 +124,8 @@ body {
 
 
 .header img {
+  /*border: 1px solid white;*/
+
   width: 30px;
   height: 30px;
 }
@@ -155,9 +159,12 @@ h2 {
   height: 100%;
   padding-top: 100px;
   display: flex;
+  align-items: center;
 }
 
 .logo {
+  /*border: 1px solid pink;*/
+
   max-width: 700px;
   max-height: 600px;
   width: 100%;
@@ -196,6 +203,7 @@ h2 {
 }
 
 
+
 .bottone {
   /*border: 1px solid red;*/
 
@@ -203,14 +211,112 @@ h2 {
   border-radius: 100%;
   font-size: 70px;
   border: none;
-  width: 20vw;
-  height: 20vh;
-  max-width: 165px;
-  max-height: 165px;
+  width: 180px;
+  height: 180px;
+  margin: 20px;
   box-shadow:  3px 3px 5px rgba(0, 0, 0, 0.5),
                inset -2px -2px 5px rgba(0, 0, 0, 0.5),
                -6px -6px 20px rgba(255, 255, 255, 0.05);
 }
+
+/* VISUALIZZAZIONE TABLET */
+@media (max-width: 980px) {
+  .bottone {
+    /*background-color: red;*/
+    width: 155px;
+    height: 155px;
+    font-size: 60px;
+    margin: 8px;
+  }
+
+  .pulsanti {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin-bottom: 80px;
+    margin-top: 50px;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .logo {
+    width: 500px;
+    height: 400px;
+  }
+}
+
+/* VISUALIZZAZIONE MOBILE ORIZZONTALE */
+@media (max-width: 767px) {
+  .bottone {
+    /*background-color: blue;*/
+    width: 100px;
+    height: 100px;
+    font-size: 47px;
+    margin: 8px;
+  }
+
+  .pulsanti {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin-bottom: 80px;
+    margin-top: 50px;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .logo {
+    width: 400px;
+    height: 300px;
+  }
+
+  .header img {
+    width: 25px;
+    height: 25px;
+  }
+
+
+
+}
+/* VISUALIZZAZIONE MOBILE VERTICALE */
+@media (max-width: 480px) {
+  .bottone {
+    /*background-color: blue;*/
+    width: 130px;
+    height: 130px;
+    font-size: 50px;
+    margin: 8px;
+  }
+
+  .pulsanti {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 0px;
+    margin-bottom: 80px;
+    margin-top: 50px;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .logo {
+    width: 400px;
+    height: 300px;
+  }
+
+  .header img {
+    width: 25px;
+    height: 25px;
+  }
+
+}
+
 
 
 .bottone:hover::after {
@@ -223,6 +329,8 @@ h2 {
   text-transform: uppercase;
   margin-top: 10px;
 }
+
+
 
 #chimica:hover {
   background: radial-gradient(circle, rgba(153,231,211,1) 0%, rgba(56,140,236,1) 81%);
