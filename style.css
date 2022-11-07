@@ -27,10 +27,11 @@ body {
   color: #FFF;
   text-align: center;
   padding: 80px;
-  background-color: #000;
-  background-color: rgba(0, 0, 0, .5);
+  /*background-color: #000;*/
+  background-color: rgba(143, 188, 143, 0.9);
   box-sizing: border-box;
 }
+
 
 
 
@@ -100,6 +101,11 @@ body {
 
 
 @media (max-width: 980px) {
+
+  .homepost {
+    overflow-x: hidden; /*eliminare la scrollbar orizzontale*/
+  }
+
   .tornanellahome {
     width: 20%;
   }
@@ -115,6 +121,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden; /*eliminare la scrollbar orizzontale*/
+
   }
 
   .arrow img {
@@ -153,6 +161,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden; /*eliminare la scrollbar orizzontale*/
+
   }
 
   .arrow img {
@@ -183,6 +193,8 @@ body {
     width: 45px;
     height: 45px;
   }
+
+
 
 
 }
@@ -538,9 +550,17 @@ h2 {
   font-size: 18px;
 
 }
+
 .dot {
   /*border: 1px solid green;*/
   margin: auto;
+  margin-right: -13px;
+
+}
+
+.dot img {
+  width: 35px;
+  height: 35px;
 }
 
 
@@ -562,13 +582,22 @@ h2 {
 }
 
 .instagram__list { /*ho creato una "sottoclasse" per posizionare a destra il bookmark*/
+  /*border: 1px solid blue;*/
+
   display: flex;
 }
 
 .instagram__list #bookmark {
+  /*border: 1px solid red;*/
+
   margin-left: auto;
-  margin-right: 0;
+  margin-right: -5px;
+
+  margin-top: 2px;
 }
+
+
+
 
 .instagram__list #balloon { /*specchio l'item*/
   transform: rotateY(180deg);
@@ -576,6 +605,8 @@ h2 {
 
 .instagram__list #send {
   /*border: 1px solid red;*/
+
+
 }
 
 .testo h1 {
@@ -635,7 +666,7 @@ h2 {
 @media (max-width: 767px) {
   .corpo {
     width: 80%;
-    padding: 10px 0 10px 0;
+    padding: 10px 0 35px 0;
   }
 
   .testo p {
@@ -649,14 +680,14 @@ h2 {
 
 @media (max-width: 480px) {
   .corpo {
-    width: 97%;
-    padding: 10px 0 10px 0;
+    width: 90%;
+    padding: 10px 0 35px 0;
   }
 
   .testo h1 {
     font-size: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   .testo p {
