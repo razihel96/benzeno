@@ -11,6 +11,24 @@
   <!--ANIMATE.CSS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
+
+  <!--LOADING-->
+  <script>
+  (function(){
+    if (window.addEventListener)
+    {
+      window.addEventListener("load", nascondi_loading_screen, false);
+    }else{
+      window.attachEvent("onload", nascondi_loading_screen);
+    }
+  })();
+  function nascondi_loading_screen()
+  {
+    document.getElementById("loading_screen").style.display = 'none';
+  }
+  </script>
+
+
 </head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -75,5 +93,12 @@
         <li></li>
 
 </ul>
+
+
+<div id="loading_screen">
+
+</div>
+
+<script src="script.js"></script>
 
 </html>

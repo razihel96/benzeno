@@ -9,6 +9,23 @@
   <link rel="stylesheet" href="style.css">
   <!--ANIMATE.CSS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+
+  <!--LOADING-->
+  <script>
+  (function(){
+    if (window.addEventListener)
+    {
+      window.addEventListener("load", nascondi_loading_screen, false);
+    }else{
+      window.attachEvent("onload", nascondi_loading_screen);
+    }
+  })();
+  function nascondi_loading_screen()
+  {
+    document.getElementById("loading_screen").style.display = 'none';
+  }
+  </script>
 </head>
 
 
@@ -71,7 +88,13 @@
 
 
 
+<!-- CARICAMENTO -->
+<div id="loading_screen">
 
+</div>
+
+
+<script src="script.js"></script>
 <script src="quiz.js"></script>
 <script src="app.js"></script>
 
