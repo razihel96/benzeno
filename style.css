@@ -35,6 +35,8 @@ body {
 
 
 .homepost {
+  /*border: 5px solid white;*/
+
   display: flex;
 }
 
@@ -47,7 +49,7 @@ body {
 }
 
 .tornanellahome {
-  /*border: 1px solid red;*/
+  /*border: 1px solid white;*/
 
   font-size: 80px;
   display: flex;
@@ -67,6 +69,8 @@ body {
 }
 
 .arrow {
+  /*border: 1px solid white;*/
+
   background-color: #2d2d2b;
   color: black;
   border: none;
@@ -94,6 +98,94 @@ body {
   animation-timing-function: ease-in-out;
 }
 
+
+@media (max-width: 980px) {
+  .tornanellahome {
+    width: 20%;
+  }
+
+  .arrow {
+    width: 20%;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .homepost {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arrow img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tornanellahome img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tornanellahome {
+    font-size: 40px;
+    margin-top: 40px;
+  }
+
+  .casa2:hover {
+    width: 45px;
+    height: 45px;
+  }
+
+  .arrow {
+    margin-bottom: 40px;
+  }
+
+  .arrow2:hover {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .homepost {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arrow img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tornanellahome img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tornanellahome {
+    font-size: 40px;
+    margin-top: 40px;
+  }
+
+  .casa2:hover {
+    width: 45px;
+    height: 45px;
+  }
+
+  .arrow {
+    margin-bottom: 40px;
+  }
+
+  .arrow2:hover {
+    width: 45px;
+    height: 45px;
+  }
+
+
+}
 
 
 /*BANNER*/
@@ -422,7 +514,7 @@ h2 {
 }
 
 .banner {
-  /*border: 1px solid red;*/
+  /*border: 1px solid blue;*/
 
   width: 100%;
   display: flex;
@@ -433,6 +525,8 @@ h2 {
 }
 
 .pic img {
+  /*border: 1px solid pink;*/
+
   width: 55px;
   height: 55px;
 }
@@ -445,7 +539,7 @@ h2 {
 
 }
 .dot {
-  /*border: 1px solid blue;*/
+  /*border: 1px solid green;*/
   margin: auto;
 }
 
@@ -485,7 +579,7 @@ h2 {
 }
 
 .testo h1 {
-  /*border: 1px solid red;*/
+  /*border: 1px solid violet;*/
 
   color: black;
   padding-top: 15px;
@@ -498,7 +592,7 @@ h2 {
 }
 
 .testo p {
-  /*border: 1px solid red;*/
+  /*border: 1px solid black;*/
 
   text-align: justify;
   color: black;
@@ -531,7 +625,49 @@ h2 {
 }
 
 
+@media (max-width: 980px) {
+  .corpo {
+    width: 80%;
+    padding: 10px 0 10px 0;
+  }
+}
 
+@media (max-width: 767px) {
+  .corpo {
+    width: 80%;
+    padding: 10px 0 10px 0;
+  }
+
+  .testo p {
+    font-size: 15px;
+  }
+
+  .sezione {
+    padding: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .corpo {
+    width: 97%;
+    padding: 10px 0 10px 0;
+  }
+
+  .testo h1 {
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .testo p {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .sezione {
+    padding: 13px;
+  }
+}
 
 
 /*FORM*/
