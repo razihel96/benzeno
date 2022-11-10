@@ -11,7 +11,7 @@ a {
 
 
 body {
-  /*border: 5px solid white;*/
+  border: 2px solid red;
   background-color: #2d2d2b;
   font-family: 'Noto Sans', sans-serif;
 }
@@ -739,7 +739,7 @@ h2 {
 
 @media (max-width: 480px) {
   .corpo {
-    /*border: 1px solid green;*/
+    border: 1px solid green;
     width: 90%;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -758,7 +758,7 @@ h2 {
   }
 
   .sezione {
-    /*border: 1px solid blue;*/
+    border: 1px solid blue;
     padding: 13px; /*quanto è spessa la cornice bianca*/
     overflow-x: hidden; /*eliminare la scrollbar orizzontale*/
   }
