@@ -237,6 +237,14 @@ body {
     height: 45px;
   }
 
+  .animated.slideInRight {
+    border: 1px solid blue;
+}
+
+  .sezione.animated.slideInRight {
+    border: 1px solid pink;
+  }
+
 
 }
 
@@ -406,9 +414,13 @@ h2 {
   }
 
   .pulsanti {
+    border: 1px solid red;
+
     display: flex;
     width: 90%;
     margin-bottom: 80px;
+    margin-top: 80px;
+
   }
 
   .hero {
@@ -469,6 +481,10 @@ h2 {
 }
 /* VISUALIZZAZIONE MOBILE VERTICALE */
 @media (max-width: 480px) {
+
+  .body {
+    overflow-x: hidden; /*eliminare la scrollbar orizzontale*/
+  }
 
   .bottone {
     /*border: 1px solid red;*/
