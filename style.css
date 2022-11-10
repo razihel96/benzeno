@@ -14,7 +14,6 @@ body {
   /*border: 5px solid white;*/
   background-color: #2d2d2b;
   font-family: 'Noto Sans', sans-serif;
-  overflow-x: hidden; /*eliminare la scrollbar orizzontale*/
 }
 
 
@@ -34,6 +33,7 @@ body {
   line-height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
   box-sizing: border-box;
+  overflow-y: hidden; /* disabilita l'uso dello scrollbar durante il caricamento*/
 }
 
 /*
@@ -760,6 +760,7 @@ h2 {
   .sezione {
     /*border: 1px solid blue;*/
     padding: 13px; /*quanto è spessa la cornice bianca*/
+    overflow-x: hidden; /*eliminare la scrollbar orizzontale*/
   }
 }
 
