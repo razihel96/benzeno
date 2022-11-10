@@ -11,6 +11,8 @@ a {
 
 
 body {
+  /*border: 5px solid white;*/
+  height: 100vh;
   background-color: #2d2d2b;
   font-family: 'Noto Sans', sans-serif;
   overflow-x: hidden; /*eliminare la scrollbar orizzontale*/
@@ -290,8 +292,7 @@ h2 {
   /*border: 1px solid blue;*/
 
   margin: auto;
-  width: 50%;
-  height: 100%;
+  height: 60%;
   padding-top: 100px;
   display: flex;
   align-items: center;
@@ -312,11 +313,26 @@ h2 {
 
 
 /*FOOTER*/
-.contenitore {
+/*.contenitore {
+  border: 1px solid yellow;
+  position: sticky;
+  bottom: 0;
   display: flex;
   justify-content: center;
   color: #4d765f;
   font-size: 15px;
+}*/
+
+.contenitore {
+  /*border: 1px solid yellow;*/
+
+  color: #4d765f;
+  text-align: center;
+  line-height: 2.5rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
 }
 
 
@@ -351,9 +367,10 @@ h2 {
   box-shadow:  3px 3px 5px rgba(0, 0, 0, 0.5),
                inset -2px -2px 5px rgba(0, 0, 0, 0.5),
                -6px -6px 20px rgba(255, 255, 255, 0.05);
+
 }
 
-
+/*
 .bottone:hover::after {
   font-size: 10px;
   letter-spacing: 1px;
@@ -363,8 +380,19 @@ h2 {
   font-family: 'Noto Sans', sans-serif;
   text-transform: uppercase;
   margin-top: 10px;
-}
+}*/
 
+.pulsanti p {
+  color: lightgrey;
+  font-size: 10px;
+  letter-spacing: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Sans', sans-serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
 
 
 
@@ -380,14 +408,14 @@ h2 {
 
   .pulsanti {
     display: flex;
-    height: 100%;
     width: 90%;
     margin-bottom: 80px;
-    margin-top: 50px;
   }
 
   .hero {
     width: 100%;
+    height: 60%;
+
   }
 
   .logo {
@@ -408,19 +436,24 @@ h2 {
 
   .pulsanti {
     display: flex;
-    height: 100%;
     width: 95%;
     margin-bottom: 80px;
-    margin-top: 50px;
+  }
+
+  .pulsanti p {
+    margin-top: 0px;
+    font-size: 8px;
   }
 
   .hero {
     width: 100%;
+    height: 60%;
+
   }
 
   .logo {
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
   }
 
   .header img {
@@ -437,28 +470,36 @@ h2 {
 }
 /* VISUALIZZAZIONE MOBILE VERTICALE */
 @media (max-width: 480px) {
+
+
   .bottone {
     /*background-color: blue;*/
-    width: 130px;
-    height: 130px;
+    /*border: 1px solid red;*/
+    width: 120px;
+    height: 120px;
     font-size: 50px;
-    margin: 10px;
   }
 
   .pulsanti {
+    /*border: 1px solid green;*/
+
     display: flex;
     flex-direction: column;
-    height: 100%;
-    padding-bottom: 0px;
-    margin-bottom: 80px;
-    margin-top: 30px;
+    margin-top: 10px;
+    height: 60%;
   }
 
   .hero {
+    /*border: 1px solid blue;*/
+    height: 395px;
+    margin-top: 0px;
     width: 100%;
   }
 
   .logo {
+    /*border: 1px solid yellow;*/
+    margin-top: -12px;
+
     width: 400px;
     height: 300px;
   }
@@ -468,8 +509,19 @@ h2 {
     height: 25px;
   }
 
-}
+  .contenitore {
+    /*border: 1px solid red;*/
 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 50px;
+    margin-bottom:-110px;
+  }
+
+
+
+}
 
 
 
@@ -482,9 +534,9 @@ h2 {
               inset 3px 3px 10px rgba(0, 0, 0, 0.5),
               4px 4px 10px rgba(255, 255, 255, 0.15);
 }
-#chimica:hover::after {
+/*#chimica:hover::after {
   content: "Chimica";
-}
+}*/
 
 #bio:hover {
   background: radial-gradient(circle, rgba(231,153,214,1) 0%, rgba(148,168,233,1) 81%);
@@ -493,9 +545,9 @@ h2 {
               inset 3px 3px 10px rgba(0, 0, 0, 0.5),
               4px 4px 10px rgba(255, 255, 255, 0.15);
 }
-#bio:hover::after {
+/*#bio:hover::after {
   content: "Biologia";
-}
+}*/
 
 #curio:hover {
   background: radial-gradient(circle, rgba(254,255,178,1) 0%, rgba(255,210,121,1) 81%);
@@ -504,9 +556,9 @@ h2 {
               inset 3px 3px 10px rgba(0, 0, 0, 0.5),
               4px 4px 10px rgba(255, 255, 255, 0.15);
 }
-#curio:hover::after {
+/*#curio:hover::after {
   content: "Curiosità";
-}
+}*/
 
 #quiz:hover {
   background: radial-gradient(circle, rgba(241,148,106,1) 0%, rgba(232,107,136,1) 81%);
@@ -515,13 +567,9 @@ h2 {
               inset 3px 3px 10px rgba(0, 0, 0, 0.5),
               4px 4px 10px rgba(255, 255, 255, 0.15);
 }
-#quiz:hover::after {
+/*#quiz:hover::after {
   content: "Quiz";
-}
-
-
-
-
+}*/
 
 
 
