@@ -19,23 +19,7 @@ body {
 
 
 
-/***********************************/
-/*********** CARICAMENTO ***********/
-/***********************************/
 
-#loader {
-  display: block;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  color: #FFF;
-  text-align: center;
-  line-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
-  box-sizing: border-box;
-  overflow-y: hidden; /* disabilita l'uso dello scrollbar durante il caricamento*/
-}
 
 /*
 #loader {
@@ -793,7 +777,6 @@ h2 {
   height: 45px;
 }
 
-
 .scrivici {
   /*border: 1px solid red;*/
   font-size: 40px;
@@ -1319,4 +1302,25 @@ h2 {
   .result-box {
     width: 90%;
   }
+}
+
+
+
+/***********************************/
+/*********** CARICAMENTO ***********/
+/***********************************/
+
+#loader {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  color: #FFF;
+  text-align: center;
+  line-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-sizing: border-box;
+  overflow-y: hidden; /* disabilita l'uso dello scrollbar durante il caricamento*/
 }
