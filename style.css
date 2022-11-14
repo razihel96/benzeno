@@ -1311,7 +1311,11 @@ h2 {
 /***********************************/
 
 #loader {
+<<<<<<< HEAD
   /*border: 1px solid red;*/
+=======
+  border: 1px solid red;
+>>>>>>> 011905c1491275fb16d4292cc9f5e27fda49320b
 
   display: block;
   position: absolute;
