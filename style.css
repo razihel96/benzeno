@@ -341,17 +341,6 @@ h2 {
 
 }
 
-/*
-.bottone:hover::after {
-  font-size: 10px;
-  letter-spacing: 1px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Noto Sans', sans-serif;
-  text-transform: uppercase;
-  margin-top: 10px;
-}*/
 
 .pulsanti p {
   color: lightgrey;
@@ -491,15 +480,7 @@ h2 {
     height: 25px;
   }
 
-  /*.contenitore {
-    border: 1px solid red;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 50px;
-    margin-bottom:-110px;
-  }*/
 }
 
 
@@ -588,9 +569,6 @@ h2 {
   display: flex;
 }
 
-.pic {
-  /*border: 1px solid red;*/
-}
 
 .pic img {
   /*border: 1px solid pink;*/
@@ -617,9 +595,6 @@ h2 {
 }
 
 
-.instagram {
-  /*border: 1px solid blue;*/
-}
 
 .instagram img {
   /*border: 1px solid red;*/
@@ -696,13 +671,28 @@ h2 {
 /****************************************/
 /*********** POST: RESPONSIVE ***********/
 /****************************************/
+@media (min-width: 981px) {
+  .foto.scudo {
+    display: none;
+  }
+}
 
 @media (max-width: 980px) {
   .corpo {
     width: 80%;
     padding: 10px 0 10px 0;
   }
+
+  video {
+    display: none;
+  }
+
+  .testo p {
+    font-size: 15px;
+  }
+
 }
+
 
 @media (max-width: 767px) {
   .corpo {
@@ -1310,23 +1300,26 @@ h2 {
 /*********** CARICAMENTO ***********/
 /***********************************/
 
-#loader {
-<<<<<<< HEAD
-  /*border: 1px solid red;*/
-=======
-  border: 1px solid red;
->>>>>>> 011905c1491275fb16d4292cc9f5e27fda49320b
 
-  display: block;
-  position: absolute;
+#loading {
   left: 0px;
   top: 0px;
-  width: 100%;
-  height: 100vh;
-  color: #FFF;
-  text-align: center;
-  line-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
-  box-sizing: content-box;
-  overflow-y: hidden;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid darkgrey;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 1.5s ease infinite; /* Safari */
+  animation: spin 1.5s ease infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
